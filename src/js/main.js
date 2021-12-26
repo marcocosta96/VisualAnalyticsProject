@@ -10,6 +10,9 @@ var qualifying = dataset.concat("/qualifying.json");
 var lapTimes = dataset.concat("/lap_times.json");
 var pitStops = dataset.concat("/pit_stops.json");
 
+var lastYear = 2021;
+var firstYear = 1950;
+
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 
 var general_update = false;
@@ -41,7 +44,7 @@ $("#sidenav-trigger").on("click", function(event) {
      $(".sidenav").sidenav("open");
 });
 
-for (let i = 2019; i > 1949; i--) {
+for (let i = lastYear; i >= firstYear; i--) {
     let year = "<option value=" + i + ">" + i + "</option>";
     $("#yearSelect").append(year);
 }
@@ -148,19 +151,19 @@ function initializeAllViews(error, drivers, constructors, results, races, circui
     $("#loading").css("display", "none"); // Hide chargement
 }
 
-var startYear = 1950, endYear = 2019;
-var startYearModal = 1950, endYearModal = 2019;
+var startYear = firstYear, endYear = lastYear;
+var startYearModal = firstYear, endYearModal = lastYear;
 
 var slider = document.getElementById("yearSlider");
 var sliderModal = document.getElementById("yearSliderModal");
 
 noUiSlider.create(slider, {
-   start: [1950, 2019],
+   start: [firstYear, lastYear],
    connect: true,
    step: 1,
    range: {
-       "min": 1950,
-       "max": 2019
+       "min": firstYear,
+       "max": lastYear
    },
    format: wNumb({
        decimals: 0
@@ -198,12 +201,12 @@ slider.noUiSlider.on("change", function (values, handle) {
 });
 
 noUiSlider.create(sliderModal, {
-   start: [1950, 2019],
+   start: [firstYear, lastYear],
    connect: true,
    step: 1,
    range: {
-       "min": 1950,
-       "max": 2019
+       "min": firstYear,
+       "max": lastYear
    },
    format: wNumb({
        decimals: 0

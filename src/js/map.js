@@ -245,12 +245,10 @@ function clicked(d) {
             .enter().append("circle")
             .attr("id", "circleMap")
             .attr("cx", function(c) {
-                //console.log(c.country);
-                return projection([+c.long, +c.lat])[0];
+                return projection([+c.lng, +c.lat])[0];
             })
             .attr("cy", function(c) {
-                //console.log(c.long + " " + c.lat);
-                return projection([+c.long, +c.lat])[1];
+                return projection([+c.lng, +c.lat])[1];
             })
             .attr("r", 3)
             .style("fill", "red")

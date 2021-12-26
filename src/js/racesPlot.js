@@ -1,6 +1,6 @@
-var marginRacePlot = {top: 30, right: 40, bottom: 70, left: 60}
-var racesPlotWidth = $("#racesView").width();
-var racesPlotHeight = $("#racesView").height();
+var marginRacePlot = {top: 10, right: 0, bottom: 80, left: 60}
+var racesPlotWidth = d3.select("#racesView").node().getBoundingClientRect().width;
+var racesPlotHeight = d3.select("#racesView").node().getBoundingClientRect().height;
 var aspect = racesPlotWidth / racesPlotHeight;
 
 var racesPlot, x, y;
@@ -46,8 +46,6 @@ function makeRacesPlot() {
     //d3.select("#racesView").selectAll("*").remove();
     racesPlot = d3.select("#racesView").attr("class", "center-align").classed("svg-container", true)
                     .append("svg")
-                    //.attr("width", sWidth + marginRacePlot.left + marginRacePlot.right)
-                    //.attr("height", sHeight + marginRacePlot.top + marginRacePlot.bottom)
                     .attr("preserveAspectRatio", "xMinYMin meet")
                     .attr("viewBox", "0 0 " + (racesPlotWidth + marginRacePlot.left + marginRacePlot.right) + " " + (racesPlotHeight + marginRacePlot.top + marginRacePlot.bottom))
                     .classed("svg-content-responsive", true)
@@ -89,7 +87,7 @@ function makeRacesPlot() {
     // text label for the x axis
     racesPlot.append("text")
         .attr("x", racesPlotWidth/2)
-        .attr("y", racesPlotHeight + marginRacePlot.top + 10)
+        .attr("y", racesPlotHeight + marginRacePlot.top + 30)
         .style("text-anchor", "middle")
         .style("fill", "red")
         .style("font", "20px f1font")

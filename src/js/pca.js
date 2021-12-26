@@ -7,8 +7,8 @@ var pcaData = dataset.concat("/pcaDataset.json");
 
 var marginPca = {top: 10, right: 10, bottom: 50, left: 50};
 
-var pcaWidth = $("#racesView").width() * 50 / 45 - marginPca.left - marginPca.right;
-var pcaHeight = $("#racesView").height() - marginPca.top - marginPca.bottom;
+var pcaWidth = d3.select("#racesView").node().getBoundingClientRect().width - marginPca.left - marginPca.right;
+var pcaHeight = d3.select("#racesView").node().getBoundingClientRect().height - marginPca.top - marginPca.bottom;
 
 function populatePCASelector(drvs, cons) {
     driverNationalities = [];

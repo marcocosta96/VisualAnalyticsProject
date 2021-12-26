@@ -40,60 +40,60 @@
         </div>
 
         <div id="viewsContainer" class="scale-transition grid-container-home">
-            <div class="grid-item title center-align" id="mapViewTitle">GP Map</div>
-            <div class="grid-item title center-align" id="racesViewTitle">Races results</div>
-            <div class="grid-item" id="mapView" class="scale-transition"></div>
-            <div class="grid-item" id="racesView" class="scale-transition"></div>
-            <div class="grid-item" id="champions">
-                <div class="grid-item title center-align" style="grid-area: header">Championships' winners</div>
-                <div class="grid-item normalText center-align" style="grid-area: driv" id="drivChampLab">
-                    <div class="grid-item normalText center-align" id="drivChampLabTitle">Drivers' champion</div>
-                    <div class="grid-item normalText center-align" id="drivChampLabName"></div>
-                    <div class="grid-item normalText center-align" id="drivChampLabImage"></div>
+            <div class="title center-align" id="mapViewTitle">GP Map</div>
+            <div class="title center-align" id="racesViewTitle">Races results</div>
+            <div id="mapView" class="scale-transition"></div>
+            <div id="racesView" class="scale-transition"></div>
+            <div id="champions">
+                <div class="title center-align" style="grid-area: header">Championships' winners</div>
+                <div class="normalText center-align" style="grid-area: driv" id="drivChampLab">
+                    <div class="normalText center-align" id="drivChampLabTitle">Drivers' champion</div>
+                    <div class="normalText center-align" id="drivChampLabName"></div>
+                    <div class="normalText center-align" id="drivChampLabImage"></div>
                 </div>
-                <div class="grid-item normalText center-align" style="grid-area: cons" id="consChampLab">
-                    <div class="grid-item normalText center-align" id="consChampLabTitle">Constructors' champion</div>
-                    <div class="grid-item normalText center-align" id="consChampLabName"></div>
-                    <div class="grid-item normalText center-align" id="consChampLabImage"></div>
+                <div class="normalText center-align" style="grid-area: cons" id="consChampLab">
+                    <div class="normalText center-align" id="consChampLabTitle">Constructors' champion</div>
+                    <div class="normalText center-align" id="consChampLabName"></div>
+                    <div class="normalText center-align" id="consChampLabImage"></div>
                 </div>
             </div>
-            <div class="grid-item" id="racesPlotLegendView"></div>
+            <div id="racesPlotLegendView"></div>
         </div>
 
         <div id="infoContainer" class="scale-transition scale-out grid-container-info">
-            <div class="grid-item normalText center-align" id="yearSliderContainer">
-                <div class="grid-item normalText center-align" id="startYear">1950</div>
-                <div class="grid-item center-align" id="yearSlider"></div>
-                <div class="grid-item normalText center-align" id="endYear">2019</div>
+            <div class="normalText center-align" id="yearSliderContainer">
+                <div class="normalText center-align" id="startYear">1950</div>
+                <div class="center-align" id="yearSlider"></div>
+                <div class="normalText center-align" id="endYear">2019</div>
             </div>
-            <div class="grid-item title center-align" id="bestDriverTitle">Best driver</div>
-            <div class="grid-item title center-align" id="driversPlotTitle">Most successful drivers</div>
-            <div class="grid-item title center-align" id="drChampPlotTitle">Most drivers' championship winners</div>
-            <div class="grid-item" id="bestDriver">
-                <div class="grid-item normalText center-align" id="bestDriverName"></div>
-                <div class="grid-item normalText center-align" id="bestDriverVictories"></div>
-                <div class="grid-item normalText center-align" id="bestDriverWC"></div>
-                <div class="grid-item normalText center-align" id="bestDriverImage"></div>
+            <div class="title center-align" id="bestDriverTitle">Best driver</div>
+            <div class="title center-align" id="driversPlotTitle">Most successful drivers</div>
+            <div class="title center-align" id="drChampPlotTitle">Most drivers' championship winners</div>
+            <div id="bestDriver">
+                <div class="normalText center-align" id="bestDriverName"></div>
+                <div class="normalText center-align" id="bestDriverVictories"></div>
+                <div class="normalText center-align" id="bestDriverWC"></div>
+                <div class="normalText center-align" id="bestDriverImage"></div>
             </div>
-            <div class="grid-item" id="driversPlot"></div>
-            <div class="grid-item" id="drChampPlot"></div>
-            <div class="grid-item title center-align" id="bestConstructorTitle">Best constructor</div>
-            <div class="grid-item title center-align" id="constructorsPlotTitle">Most successful constructors</div>
-            <div class="grid-item title center-align" id="csChampPlotTitle">Most constructors' championship winners</div>
-            <div class="grid-item" id="bestConstructor">
-                <div class="grid-item normalText center-align" id="bestConstructorName"></div>
-                <div class="grid-item normalText center-align" id="bestConstructorVictories"></div>
-                <div class="grid-item normalText center-align" id="bestConstructorWC"></div>
-                <div class="grid-item normalText center-align" id="bestConstructorImage"></div>
+            <div id="driversPlot"></div>
+            <div id="drChampPlot"></div>
+            <div class="title center-align" id="bestConstructorTitle">Best constructor</div>
+            <div class="title center-align" id="constructorsPlotTitle">Most successful constructors</div>
+            <div class="title center-align" id="csChampPlotTitle">Most constructors' championship winners</div>
+            <div id="bestConstructor">
+                <div class="normalText center-align" id="bestConstructorName"></div>
+                <div class="normalText center-align" id="bestConstructorVictories"></div>
+                <div class="normalText center-align" id="bestConstructorWC"></div>
+                <div class="normalText center-align" id="bestConstructorImage"></div>
             </div>
-            <div class="grid-item" id="constructorsPlot"></div>
-            <div class="grid-item" id="csChampPlot"></div>
+            <div id="constructorsPlot"></div>
+            <div id="csChampPlot"></div>
         </div>
 
         <div id="pcaContainer" class="scale-transition scale-out grid-container-pca center-align">
-            <div class="grid-item title center-align" id="pcaDriverTitle">PCA Drivers</div>
-            <div class="grid-item title center-align" id="pcaConstructorTitle">PCA Constructors</div>
-            <div class="grid-item" id="pcaDriver">
+            <div class="title center-align" id="pcaDriverTitle">PCA Drivers</div>
+            <div class="title center-align" id="pcaConstructorTitle">PCA Constructors</div>
+            <div id="pcaDriver">
                 <div class="row">
                     <div class="input-field col s12">
                         <select id="pcaDriverSelect"></select>
@@ -103,7 +103,7 @@
                     <div class="loaderPCA" id="loadingPCADriver"></div>
                 </div>
             </div>
-            <div class="grid-item" id="pcaConstructor">
+            <div id="pcaConstructor">
                 <div class="row">
                     <div class="input-field col s12">
                         <select id="pcaConstructorSelect"></select>
@@ -146,29 +146,29 @@
             <div class="modal-content" id="modalContent">
                 <div class="tooltip"></div>
                 <div id="modalContainer" class="grid-container-modal">
-                <div class="grid-item center-align title" id="circuitTitle"></div>
-                    <div class="grid-item center-align title" id="standingPlotTitle">General Standing</div>
-                    <div class="grid-item center-align title" id="lapTimesPlotTitle">Lap Times</div>
-                    <div class="grid-item" id="standingPlot"></div>
-                    <div class="grid-item" id="lapTimesPlot"><img class ="scale-transition scale-out no-dimension" id="noDataGifLTP" src="src/images/noData.gif"></div>
-                    <div class="grid-item center-align title" id="qualiStandingPlotTitle">Qualifying Times</div>
-                    <div class="grid-item center-align title" id="resTableTitle">Order of Arrival</div>
-                    <div class="grid-item" id="qualiStandingPlot"><img class ="scale-transition scale-out no-dimension" id="noDataGifQSP" src="src/images/noData.gif"></div>
-                    <div class="grid-item" id="resTable"></div>
-                    <div class="grid-item center-align title" id="circuitRangeTitle">Analysis from 1950 to 2019</div>
-                    <div class="grid-item normalText center-align" id="yearModalSliderContainer">
-                        <div class="grid-item normalText center-align" id="startYearModal">1950</div>
-                        <div class="grid-item center-align" id="yearSliderModal"></div>
-                        <div class="grid-item normalText center-align" id="endYearModal">2019</div>
+                <div class="center-align title" id="circuitTitle"></div>
+                    <div class="center-align title" id="standingPlotTitle">General Standing</div>
+                    <div class="center-align title" id="lapTimesPlotTitle">Lap Times</div>
+                    <div id="standingPlot"></div>
+                    <div id="lapTimesPlot"><img class ="scale-transition scale-out no-dimension" id="noDataGifLTP" src="src/images/noData.gif"></div>
+                    <div class="center-align title" id="qualiStandingPlotTitle">Qualifying Times</div>
+                    <div class="center-align title" id="resTableTitle">Order of Arrival</div>
+                    <div id="qualiStandingPlot"><img class ="scale-transition scale-out no-dimension" id="noDataGifQSP" src="src/images/noData.gif"></div>
+                    <div id="resTable"></div>
+                    <div class="center-align title" id="circuitRangeTitle">Analysis from 1950 to 2019</div>
+                    <div class="normalText center-align" id="yearModalSliderContainer">
+                        <div class="normalText center-align" id="startYearModal">1950</div>
+                        <div class="center-align" id="yearSliderModal"></div>
+                        <div class="normalText center-align" id="endYearModal">2019</div>
                     </div>
-                    <div class="grid-item normalText center-align" id="circuitData">
-                        <div class="grid-item normalText center-align" id="bestDriverTime"></div>
-                        <div class="grid-item normalText center-align" id="percentagePoleWinner"></div>
+                    <div class="normalText center-align" id="circuitData">
+                        <div class="normalText center-align" id="bestDriverTime"></div>
+                        <div class="normalText center-align" id="percentagePoleWinner"></div>
                     </div>
-                    <div class="grid-item center-align title" id="bestQualiPlotTitle">Best Qualifying Time</div>
-                    <div class="grid-item center-align title" id="pitPlotTitle">Pit Stops</div>
-                    <div class="grid-item" id="bestQualiPlot"><img class ="scale-transition scale-out no-dimension" id="noDataGifBQP" src="src/images/noData.gif"></div>
-                    <div class="grid-item" id="pitPlot"><img class ="scale-transition scale-out no-dimension" id="noDataGifPP" src="src/images/noData.gif"></div>
+                    <div class="center-align title" id="bestQualiPlotTitle">Best Qualifying Time</div>
+                    <div class="center-align title" id="pitPlotTitle">Pit Stops</div>
+                    <div id="bestQualiPlot"><img class ="scale-transition scale-out no-dimension" id="noDataGifBQP" src="src/images/noData.gif"></div>
+                    <div id="pitPlot"><img class ="scale-transition scale-out no-dimension" id="noDataGifPP" src="src/images/noData.gif"></div>
                 </div>
             </div>
             <div class="modal-footer">
